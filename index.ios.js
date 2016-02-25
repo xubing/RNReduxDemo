@@ -31,7 +31,7 @@ class RNReduxDemo extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          This a Demo how to use 
+          A demo about
           <Text style ={styles.red}> React Native</Text> and 
           <Text style ={styles.blue}> Redux!</Text>
         </Text>
@@ -107,7 +107,6 @@ const styles = StyleSheet.create({
   resultcolor:{
      backgroundColor: '#EE00FF',
   },
-
 });
 
 AppRegistry.registerComponent('RNReduxDemo', () => RNReduxDemo);

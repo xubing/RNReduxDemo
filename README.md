@@ -1,5 +1,5 @@
 # RNReduxDemo
-###This is a Demo use React Native and Redux Demo.
+###This is a demo  how to use React Native and Redux Demo.
 ###It is a simple application to calculate.
 
 ---
@@ -13,6 +13,8 @@ How to run this application in ios ?
 
 `if you want to run ios ,you can open the ios/RNReduxDemo.xcodeproj and run the application or use the above command to run the applicaion in your simulator.
  
+ 
+ ![demo ](./demo.png "Title")
 
 
 
