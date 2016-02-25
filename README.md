@@ -5,7 +5,7 @@
 ---
 How to run this application ?
 
-
-git clone git@github.com:xubing/RNReduxDemo.git
-npm install 
+1. git clone git@github.com:xubing/RNReduxDemo.git
+2. npm install 
+3. 
 
