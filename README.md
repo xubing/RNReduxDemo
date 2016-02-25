@@ -11,7 +11,11 @@ How to run this application in ios ?
 4. react-native start
 5. react-native run-ios  
 
-`if you want to run ios ,you can open the ios/RNReduxDemo.xcodeproj and run the application or use the above command to run the applicaion in your simulator.
+##
+if you want to run ios ,you can open the ios/RNReduxDemo.xcodeproj and run the application or use the above command to run the applicaion in your simulator.
+
+##
+if you want toggle software keyboard,pls in your simulator 'hardware'->'keyboard'->'toggle software keyboard'
  
  
  ![demo ](./demo.png "Title")
