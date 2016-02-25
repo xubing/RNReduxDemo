@@ -16,15 +16,12 @@ class RNReduxDemo extends Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to React Native!
+          This a Demo how to use 
+          <Text style ={styles.red}> React Native</Text> and 
+          <Text style ={styles.blue}> Redux!</Text>
         </Text>
-        <Text style={styles.instructions}>
-          To get started, edit index.ios.js
-        </Text>
-        <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
-        </Text>
+
+
       </View>
     );
   }
@@ -33,20 +30,29 @@ class RNReduxDemo extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    justifyContent: 'flex-start',    
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 10,
+    margin: 50,   
   },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
+  red:{
+   color:'red'
   },
+  blue:{
+   color:'blue'
+  },
+  
+  black:{
+     backgroundColor: '#000000',
+  },
+  resultcolor:{
+     backgroundColor: '#EE00FF',
+  },
+
 });
 
 AppRegistry.registerComponent('RNReduxDemo', () => RNReduxDemo);
