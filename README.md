@@ -3,7 +3,7 @@
 ###It is a simple application to calculate.
 
 ---
-How to run this application ?
+How to run this application in ios ?
 
 1. git clone git@github.com:xubing/RNReduxDemo.git
 2. cd RNReduxDemo
