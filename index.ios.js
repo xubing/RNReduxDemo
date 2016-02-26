@@ -46,9 +46,11 @@ class RNReduxDemo extends Component {
           value= {this.state.input1}>
         </TextInput>
 
+         <View style = {styles.start}> 
         <Text style = {styles.operator}>
            {this.state.operator}
         </Text>
+        </View>
 
         <TextInput 
           style={styles.input}
@@ -61,7 +63,7 @@ class RNReduxDemo extends Component {
 
         <View style = {styles.black} />
 
-        <Text style = {styles.resultcolor}>
+        <Text style = {[styles.resultcolor,styles.start]}>
            ={this.state.result}
         </Text>
         
@@ -75,16 +77,19 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'flex-start',    
-    alignItems: 'center',
-    
+    alignItems: 'flex-start',
+    margin: 20,  
+  },
+  start:
+  {
+     left: 20, 
   },
   operator:{
-    fontSize:20,
-
+    fontSize:30,
   },
   input:{
     height: 40,
-    width:300, 
+    width:200, 
     borderColor: 'blue',
     borderWidth: 1,
     margin: 20,   
@@ -93,7 +98,7 @@ const styles = StyleSheet.create({
   welcome: {
     fontSize: 20,
     textAlign: 'center',
-    margin: 50,   
+    margin: 10,   
   },
   red:{
    color:'red'
@@ -105,7 +110,6 @@ const styles = StyleSheet.create({
     height: 20,
     backgroundColor: '#333333'
   },
-
   black:{
     height:15,
     width:900,
