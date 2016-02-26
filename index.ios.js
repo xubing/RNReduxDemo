@@ -29,7 +29,8 @@ class RNReduxDemo extends Component {
 
   render() {
     return (
-      <View style={styles.container}>
+      <View style = {styles.container}>  
+
         <Text style={styles.welcome}>
           A demo about
           <Text style ={styles.red}> React Native</Text> and 
@@ -57,9 +58,13 @@ class RNReduxDemo extends Component {
           onEndEditing = {()=>this.onChange()}
           value={this.state.input2}>          
         </TextInput>
-        <Text style = {styles.operator}>
+
+        <View style = {styles.black} />
+
+        <Text style = {styles.resultcolor}>
            ={this.state.result}
         </Text>
+        
 
       </View>
     );
@@ -102,10 +107,13 @@ const styles = StyleSheet.create({
   },
 
   black:{
-     backgroundColor: '#000000',
+    height:15,
+    width:900,
+    backgroundColor: '#000000',
   },
   resultcolor:{
-     backgroundColor: '#EE00FF',
+     color: '#FF0000',
+     fontSize: 20,
   },
 });
 
