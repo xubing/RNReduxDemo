@@ -5,6 +5,8 @@
 ---
 How to run this application in ios ?
 
+using npm3 not npm2,
+
 1. git clone git@github.com:xubing/RNReduxDemo.git
 2. cd RNReduxDemo
 3. npm install 
