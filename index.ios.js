@@ -3,122 +3,25 @@
  * https://github.com/facebook/react-native
  */
 'use strict';
-import React, {
+import React,{
   AppRegistry,
-  Component,
-  StyleSheet,
-  Text,
-  TextInput,
-  View
+  Component
 } from 'react-native';
 
+// import {createStore} from 'redux';
+
+import * as types from  './commands';
+import {calculate} from './reducers';
+import App from './app';
+
+// const store = createStore(calculate);
+
 class RNReduxDemo extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {input1: '1',input2: '1',result:'2', operator:'+'};
-  }
-
-  onChange(){
-    let value1 = parseInt(this.state.input1)
-    let value2 = parseInt(this.state.input2)
-    let revalue = value1+value2
-    console.log(revalue)
-    this.setState({result:revalue.toString()})
-  }
-
   render() {
     return (
-      <View style = {styles.container}>  
-
-        <Text style={styles.welcome}>
-          A demo about
-          <Text style ={styles.red}> React Native</Text> and 
-          <Text style ={styles.blue}> Redux!</Text>
-        </Text>
-
-        <TextInput 
-          style={styles.input}    
-          keyboardType="numeric"
-          returnKeyType="next"
-          onChangeText={(input1) => this.setState({input1}) }
-          onEndEditing = {()=>this.onChange()}          
-          value= {this.state.input1}>
-        </TextInput>
-
-         <View style = {styles.start}> 
-        <Text style = {styles.operator}>
-           {this.state.operator}
-        </Text>
-        </View>
-
-        <TextInput 
-          style={styles.input}
-          keyboardType="numeric"
-          returnKeyType="done"
-          onChangeText={(input2) => this.setState({input2})}
-          onEndEditing = {()=>this.onChange()}
-          value={this.state.input2}>          
-        </TextInput>
-
-        <View style = {styles.black} />
-
-        <Text style = {[styles.resultcolor,styles.start]}>
-           ={this.state.result}
-        </Text>
-        
-
-      </View>
+        <App />
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'flex-start',    
-    alignItems: 'flex-start',
-    margin: 20,  
-  },
-  start:
-  {
-     left: 20, 
-  },
-  operator:{
-    fontSize:30,
-  },
-  input:{
-    height: 40,
-    width:200, 
-    borderColor: 'blue',
-    borderWidth: 1,
-    margin: 20,   
-
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,   
-  },
-  red:{
-   color:'red'
-  },
-  blue:{
-   color:'blue'
-  },
-  blackborder:{
-    height: 20,
-    backgroundColor: '#333333'
-  },
-  black:{
-    height:15,
-    width:900,
-    backgroundColor: '#000000',
-  },
-  resultcolor:{
-     color: '#FF0000',
-     fontSize: 20,
-  },
-});
 
 AppRegistry.registerComponent('RNReduxDemo', () => RNReduxDemo);
