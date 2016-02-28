@@ -79,6 +79,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-start',    
     alignItems: 'flex-start',    
     top: 30,  
+     backgroundColor: '#FFEEFF',
   },
 
 
