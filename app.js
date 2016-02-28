@@ -11,7 +11,10 @@ import React, {
   TouchableHighlight,
   Alert,
   TextInput,
-  View
+  View,
+  PropTypes
+
+
 } from 'react-native';
 
 import { connect } from 'react-redux';
@@ -62,6 +65,13 @@ import * as actions from  './actions'
     );
   }
 }
+
+App.propTypes = {
+  number: PropTypes.number.isRequired,
+  add: PropTypes.func.isRequired,
+  sub: PropTypes.func.isRequired
+}
+
 
 const styles = StyleSheet.create({
   container: {
