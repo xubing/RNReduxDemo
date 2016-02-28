@@ -1,5 +1,5 @@
 
-import * as types from  './commands'
+import * as types from  './actiontypes'
 
 const initialState = 5;
 

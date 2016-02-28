@@ -1,4 +1,4 @@
-import * as types from './commands';
+import * as types from './actiontypes';
 
 export function add() {
   console.log('add')

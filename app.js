@@ -17,23 +17,18 @@ import React, {
 import { connect } from 'react-redux';
 import {bindActionCreators} from 'redux';
 
-import * as types from  './commands'
+import * as actions from  './actions'
 
-export default class App extends Component {
+ class App extends Component {
 
   constructor(props) {
     super(props);
   }
 
-  // clickAdd :()=>this.props.Add()
-  // clickSub :()=>this.props.Sub()
   render() {
-    return (
-       /** 
-        *title 
-   */     
-      // const {number, add, sub } = this.props;
 
+     console.log(this.props);
+    return (
       <View style = {styles.container}>         
         <Text style={styles.welcome}>
           A demo about
@@ -91,8 +86,6 @@ const styles = StyleSheet.create({
     padding: 12,
     justifyContent: 'center',    
     alignItems: 'center',
-
-    
   },
   
   number:{
@@ -134,12 +127,12 @@ const styles = StyleSheet.create({
 
 
 
-// export default connect(state => ({
-//     state: state
-//   }),
-//   (dispatch) => ({
-//     actions: bindActionCreators(types, dispatch)
-//   })
-// )(App);
+export default connect(state => ({
+    number: state
+  }),
+  (dispatch) => ({
+    actions: bindActionCreators(actions, dispatch)
+  })
+)(App);
 
 
