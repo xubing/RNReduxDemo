@@ -2,7 +2,8 @@
 ###This is a demo  how to use React Native and Redux Demo.
 ###It is a simple application to calculate.
 
-这个只是简单的Redux的用法。欢迎讨论。
+这个只是简单的Redux的用法。通过了解Redux的action，reducer,store的概念和data flow，你将会用的很熟练。
+欢迎交流。
 ---
 How to run this application in ios ?
 using npm3 not npm2, otherwise you will meet the nameing conflict
