@@ -4,8 +4,7 @@
 
 ---
 How to run this application in ios ?
-
-using npm3 not npm2,
+using npm3 not npm2, otherwise you will meet the nameing conflict
 
 1. git clone git@github.com:xubing/RNReduxDemo.git
 2. cd RNReduxDemo
